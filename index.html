@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap");
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style_index.css" />
+  <title>Welcome Player</title>
+</head>
+
+<body>
+  <div id="overlay">
+    <div id="duck_splash">
+      <img src="images/duck_splash.svg" alt="splash screen" />
+    </div>
+  </div>
+  <!-- CLOUDS -->
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+  <!-- END CLOUDS -->
+
+  <!-- RULES POPUP    Kat-->
+  <div id="rules-popup" class="hidden">
+    <button id="close-rules-button" class="closepopupsButtons">X</button>
+    <h2 class="rules-popup-text">Objective of the game</h2>
+    <h3 class="rules-popup-text">
+      The objective is to shoot<br />all nine ducks before the timer runs out!
+    </h3>
+    <h2 class="rules-popup-text">Press start to begin the game!</h2>
+  </div>
+  <!-- END RULES POPUP-->
+
+  <!-- PLUS ONES -->
+  <div id="underlay">
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+    <div class="plus-one">+1</div>
+  </div>
+  <!-- END PLUS ONES -->
+  <!-- GENERAL CONTAINER -->
+  <div id="container">
+    <!-- AUDIO PLAYER -->
+    <div class="music-player-container">
+      <audio id="music-player" hidden controls src="/images/audio/circus_music.mp3" type="audio/mp3"></audio>
+    </div>
+    <!-- END AUDIO PLAYER -->
+    <!-- SIGNAGE WELCOME/PLAYER NAME -->
+    <section id="player_name_area">
+      <h1 id="player_name">Welcome to <br />Ducky Doom</h1>
+    </section>
+    <!-- ALERT/ COUNTER CONTAINER -->
+    <section id="alert_time_area">
+      <div id="visual-timer">
+        <div id="timer-wrapper"><span id="time">0:10</span></div>
+      </div>
+      <h3 id="alert-message">You Scored!!!</h3>
+    </section>
+    <!-- GAME AREA CONTAINER -->
+    <section id="game_area">
+      <!-- validacion -->
+
+      <form action="submit" id="player_form" class="form">
+        <h4> Write your name </h4>
+        <input type="text" id="id_name" placeholder="Name" required />
+        <button class="vibrate-1" type="submit">Play</button>
+        <div id="errorMessages"></div>
+      </form>
+
+      <!-- (Kat) AÑADIR UN DIV PARA TODO LA AREA DEL JUEGO -->
+      <div id="game_area_container" hidden>
+        <div id="game_play">
+          <input type="checkbox" id="duck1" />
+          <label for="duck1"><img src="./images/duck.svg" class="duck" /></label>
+          <input type="checkbox" id="duck2" />
+          <label for="duck2"><img src="./images/duck.svg" class="duck" /></label>
+          <input type="checkbox" id="duck3" />
+          <label for="duck3"><img src="./images/duck.svg" class="duck" /></label>
+          <input type="checkbox" id="duck4" />
+          <label for="duck4"><img src="./images/duck.svg" class="duck" /></label>
+          <input type="checkbox" id="duck5" />
+          <label for="duck5"><img src="./images/duck.svg" class="duck" /></label>
+          <input type="checkbox" id="duck6" />
+          <label for="duck6"><img src="./images/duck.svg" class="duck" /></label>
+          <input type="checkbox" id="duck7" />
+          <label for="duck7"><img src="./images/duck.svg" class="duck" /></label>
+          <input type="checkbox" id="duck8" />
+          <label for="duck8"><img src="./images/duck.svg" class="duck" /></label>
+          <input type="checkbox" id="duck9" />
+          <label for="duck9"><img src="./images/duck.svg" class="duck" /></label>
+          <!-- TODO: Implement game -->
+        </div>
+        <!-- </div> (Kat) AQUÍ SE CIERRA EL NUEVO DIV game_area_container -->
+      </div>
+    </section>
+
+    <section id="score_area">
+      <p id="score">0</p>
+    </section>
+    <section id="buttons_area">
+      <button type="button" id="start_button" class="button">Start</button>
+      <button type="button" id="reset_button" class="button">Reset</button>
+    </section>
+  </div>
+  <script src="events.js"></script>
+</body>
+
+</html>
