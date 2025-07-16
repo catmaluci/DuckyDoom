@@ -1,113 +1,122 @@
-# Proyecto: Tiro al Blanco - Juegos Típicos de Ferias
+# 🎯 Project: DuckyDoom - Classic Carnival Games
+Welcome to the development repository for DuckyDoom, an interactive online game platform! In this project, we're building a dynamic and animated web page as part of a new line of classic carnival games, specifically under the "Fair Games" category. Our team is particularly focused on developing the "Target Practice" game.
 
-Bienvenidos al repositorio del proyecto de desarrollo para **AZARGame**, un juego online interactivo. En este proyecto, estamos desarrollando una página web dinámica y animada que formará parte de la nueva línea de juegos típicos de ferias, bajo la categoría de "Juegos de Feria". En particular, nuestro equipo se encargará del desarrollo del juego **"Tiro al Blanco"**.
+## 📝 Project Description
+This project aims to create an interactive and engaging web page for the Target Practice game. The game is designed to be dynamic and animated, providing an attractive experience for users. We've incorporated a creative design and interactive behavior suitable for both desktop and mobile devices.
 
-## Descripción del Proyecto
+## ✨ Key Features
+* Name Input: Users can enter their name, which will be displayed on the main page, personalizing their experience.
 
-Este proyecto tiene como objetivo crear una página web interactiva y entretenida para el juego **Tiro al Blanco**. El juego está pensado para ser dinámico y animado, brindando una experiencia atractiva para los usuarios. Hemos incorporado un diseño creativo y un comportamiento interactivo adecuado tanto para escritorio como dispositivos móviles.
+* Aiming Sight: The game will feature a crosshair or aiming sight to target objects.
 
-### Características Principales
+* Targets/Objects: Users can knock down one or more objects as part of the gameplay.
 
-- **Ingreso de Nombre**: Los usuarios pueden ingresar su nombre, que será mostrado en la página principal.
-- **Objetivo/Mirilla**: El juego contará con una mirilla para apuntar a los objetos.
-- **Objetos/Blancos**: El usuario podrá derribar uno o varios objetos como parte del juego.
-- **Animaciones**: Los objetos/blancos se moverán con animaciones para hacer el juego más entretenido.
-- **Alerta**: Al alcanzar un objetivo, el juego notificará al usuario mediante una alerta visual.
-- **Temporizador**: Un temporizador se mostrará para añadir dinamismo y límite de tiempo al juego.
+* Animations: Targets will move with engaging animations to make the game more entertaining and challenging.
 
-## Requisitos Técnicos
+* Alerts: Upon hitting a target, the game will notify the user with a visual alert.
 
-### Tecnologías Utilizadas
+* Timer: A countdown timer will be displayed to add dynamism and a time limit to the game.
 
-- **Front-end**: HTML, CSS (SASS), JavaScript (Vanilla)
-- **Diseño**: Figma (para prototipos y wireframes)
-- **Versionado**: Git con flujo de trabajo **GitFlow**
-- **Responsividad**: Mobile-first, asegurando que el juego se vea bien en dispositivos móviles y escritorios
-- **Código**:
-  - HTML semántico
-  - CSS reutilizable
-  - Código modular tanto en CSS como en JS
+## 🛠️ Technical Requirements
 
-### Requisitos de Desarrollo
+## 💻 Technologies Used
+* Front-end: HTML, CSS (SASS), JavaScript (Vanilla)
 
-- **Código Limpio**: El código debe ser legible, bien estructurado y fácil de mantener.
-- **Documentación**:
-  - Wireframes y Mockups detallados.
-  - Prototipo interactivo de Figma.
-  - Diagramas de flujo (Flowcharts) de los algoritmos del juego.
-  - Historias de usuario y Product Backlog (con estimaciones).
-  - Kanban para la gestión del proyecto y Sprint Backlog.
+* Design: Figma (for prototypes and wireframes)
 
-## Requisitos UX/UI
+* Version Control: Git with GitFlow workflow
 
-El diseño debe ser creativo, interactivo y entretenido para ofrecer una experiencia única a los usuarios. El juego debe ser fácil de usar, intuitivo y visualmente atractivo, utilizando animaciones y transiciones para mantener el interés del jugador.
+* Responsiveness: Mobile-first approach, ensuring optimal display on both mobile and desktop devices.
 
-## Estructura del Proyecto
+Code Principles:
 
-El proyecto está organizado de la siguiente manera:
+* Semantic HTML for clear structure.
 
-```plaintext
-/ ── Raíz del Proyecto
-├── /assets ── Imágenes, iconos y otros recursos multimedia
-├── /src ── Código fuente
-│   ├── /css ── Archivos CSS
-│   ├── /js ── Archivos JavaScript
-│   └── /index.html ── Página principal del juego
+* Reusable CSS for maintainability.
+
+* Modular code in both CSS and JavaScript for better organization.
+
+## 📋 Development Requirements
+* Clean Code: The code must be readable, well-structured, and easy to maintain.
+
+Documentation:
+
+* Detailed Wireframes and Mockups.
+
+* Interactive Figma Prototype.
+
+* Flowcharts for game algorithms.
+
+* User Stories and Product Backlog (with estimates).
+
+* Kanban board for project management and Sprint Backlog.
+
+## 🎨 UX/UI Requirements
+The design must be creative, interactive, and entertaining to offer a unique user experience. The game needs to be user-friendly, intuitive, and visually appealing, utilizing animations and transitions to keep players engaged.
+
+## 📂 Project Structure
+The project is organized as follows:
+
+Plaintext
+
+/ ── Project Root
+├── /assets ── Images, icons, and other multimedia resources 🖼️
+├── /src ── Source code 🚀
+│   ├── /css ── CSS files 💅
+│   ├── /js ── JavaScript files 📜
+│   └── /index.html ── Main game page 🎮
 │
-├── /docs ── Documentación del proyecto (Wireframes, Mockups, etc.)
-├── .gitignore ── Archivos y carpetas que deben ser ignorados por Git
-├── README.md ── Documentación principal del proyecto
-└── package.json ── Dependencias y configuraciones del proyecto
+├── /docs ── Project documentation (Wireframes, Mockups, etc.) 📚
+├── .gitignore ── Files and folders to be ignored by Git 🚫
+├── README.md ── Main project documentation 📖
+└── package.json ── Project dependencies and configurations ⚙️
 
+##🚀 Installation & Usage
+Ready to hit the targets? Follow these simple steps to get the game up and running:
+
+Project Setup
+Clone the repository:
+
+ ```bash
+git clone git@github.com:catmaluci/DuckyDoom.git
 ```
+Navigate to the project folder:
 
-## Instalación
-
-Clona el repositorio:
-
-```javascript
-git clone  https://github.com/Marpro24/Carnival-DOM-Tiro-al-Blanco.git
-```
-
-Navega a la carpeta del proyecto:
-
-```javascript
+ ```bash
 
 cd Carnival-DOM-Tiro-al-Blanco
 ```
+Install the dependencies:
 
-Instala las dependencias:
-
-```javascript
+ ```bash
 
 npm install
 ```
+Launch the game:
+Open the index.html file in your web browser to start playing!
 
-Abre el archivo index.html en tu navegador para ver el juego en acción.
+## 🗓️ Development Process
+Development is conducted in agile iterations. Our team utilizes a Kanban approach for task management and a Sprint Backlog for planning iterations. User Stories are defined for each significant game functionality and are assigned with their respective estimates.
 
-## Proceso de Desarrollo
+## 🗺️ Roadmap
+🔹 Phase 1: Design and Planning 💡
+Complete wireframes, mockups, and Figma prototypes.
 
-El desarrollo se lleva a cabo en iteraciones ágiles. El equipo está utilizando un enfoque Kanban para gestionar las tareas y un Sprint Backlog para planificar las iteraciones. Las Historias de Usuario se definen para cada funcionalidad importante del juego y se asignan con sus respectivas estimaciones.
-Contribuciones
+Establish the GitFlow workflow and configure the repository.
 
-## Roadmap
+🔹 Phase 2: Game Development 🕹️
+Implement basic game functionality (player name input, timer, aiming sight, and targets).
 
-    Fase 1: Diseño y Planificación
-        Completar wireframes, mockups y prototipos de Figma.
-        Establecer el flujo de trabajo de GitFlow y configurar el repositorio.
+Create animations for the targets/objects.
 
-    Fase 2: Desarrollo del Juego
-        Implementar la funcionalidad básica del juego (nombre del jugador, temporizador, mirilla y objetos).
-        Crear animaciones de los objetos/blancos.
-        Desarrollar las alertas para notificar al usuario cuando alcanza el objetivo.
+Develop alerts to notify the user when they hit a target.
 
-    Fase 3: Estilización y Diseño UX/UI
-        Aplicar el diseño interactivo y responsivo para garantizar una experiencia fluida en todos los dispositivos.
-        Ajustar detalles visuales y mejorar las animaciones.
+🔹 Phase 3: Styling and UX/UI Design 🎨✨
+Apply the interactive and responsive design to ensure a smooth experience on all devices.
 
-## Copyyright
+Refine visual details and enhance animations.
 
-Katherine Leverton,
-Mariuxi Olaya,
-Marta Ibarra,
-Paola Morales,
+## 👥 Authors
+This project is a collaborative effort by: Katherine Leverton, Mariuxi Olaya, Marta Ibarra y Paola Morales.
+But updated for improvement after delivered by **Mariuxi Olaya** 
+<a href="https://www.linkedin.com/in/molaya">LinkedIn</a> 
